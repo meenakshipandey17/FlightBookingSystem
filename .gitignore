@@ -1,0 +1,5 @@
+target/
+!target/cucumber-reports/cucumber-pretty/*.html
+!target/cucumber-reports/advanced-reports/cucumber-html-reports/*.html
+.idea
+*.iml
