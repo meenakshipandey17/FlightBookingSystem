@@ -1,0 +1,21 @@
+This application is a project for automating integration tests for demo Flight Booking Application and named after it as Flight Booking System or FBS.This app is simulating the journey for user to login as new user and registering on the website.Once registered will search for the flights and then book the flights for different dates and destinations.
+
+Project has been implemented using Maven, Java, TesNG , JUnit, Cucumber.
+It has following things:
+1. Properties file just to simulate that if we have different environments like Dev, Test , Prod etc we can configure the URLs etc.
+2. Chrome driver for running the tests in chrome browser that can also be parameterized at command line if we want to run the apps in cross browser.
+3.We have separated the files in PageObject , StepDefinitions, Features.
+PageObject - It will contain elements on that web page and the method to do the actions on that elements.
+
+We can run the tests from command line with following commands in project folder:
+
+1. mvn test
+    By running tests from above command will only create test reports in folder target/cucumber-reports/cucumber-pretty
+
+2. mvn verify
+    By running tests from above command will create test reports in folder target/cucumber-reports/advanced-reports/cucumber-html-reports
+    For this test Reports, Masterthought Cucumber reporting plugin is used.
+
+3. If you want to run the test with a particular tag say @Login
+    mvn test -Dcucumber.options="--tags @Login"
+
