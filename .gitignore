@@ -1,5 +1,8 @@
-target/
-!target/cucumber-reports/cucumber-pretty/*.html
-!target/cucumber-reports/advanced-reports/cucumber-html-reports/*.html
 .idea
 *.iml
+target/FlightBookingSystem-1.0-SNAPSHOT.jar
+target/maven-archiver
+target/maven-status
+target/surefire-reports
+target/test-classes
+target/generated-test-sources
